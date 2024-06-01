@@ -1,0 +1,284 @@
+body {
+    background-image: url("./Photos/Singing-1.jpg");
+    height: 51em;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    animation: fade;
+    animation-duration: 3s;
+}
+
+#Nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+#Nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 50px;
+    margin-right: 90px;
+}
+
+#Nav > a:hover {
+    border-bottom: 2px solid white;
+}
+
+#Logo {
+    margin-right: 580px;
+}
+
+#MainBody .welcomingMessage p {
+    padding-left: 20px;
+    margin-left: 380px;
+    margin-right: 400px;
+    font-size: 50px;
+    border-bottom: 5px;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-radius: 25px;
+
+}
+
+.Paragraph {
+    margin-top: 300px;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.welcomingMessage {
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.button {
+    animation-name: fade;
+    animation-duration: 3.5s;
+    height: 70px;
+    width: 170px;
+    margin: 20px 820px;
+    font-size: 25px;
+    border-bottom: 5px;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.button:hover {
+    opacity: 60%;
+}
+
+
+.footer {
+    margin-top: 340px;
+
+}
+
+.footerParagraph {
+    margin: 0 25px 25px 25px;
+    font-size: 20px;
+}
+
+.Grid-container {
+
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: black;
+    justify-items: center;
+}
+
+
+.footerPhoto {
+    margin: 25px;
+}
+
+/* Tablet*/
+@media (max-width: 600px) {
+    body {
+        max-height: 800px;
+        max-width: 600px;
+        margin: 0;
+    }
+
+    #BodyContainer {
+        width: 600px;
+    }
+
+    #Nav {
+        justify-content: unset;
+        width: 100%;
+        font-size: 8px;
+    }
+
+    #Logo a img {
+        width: 150px;
+    }
+
+    #Logo {
+        margin: 10px;
+    }
+
+    #Nav a {
+        margin: 20px;
+    }
+
+    #MainBody .welcomingMessage p {
+
+
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 90px;
+        font-size: 20px;
+        border-bottom: 5px;
+        border-top: 5px;
+        border-left: 5px;
+        border-right: 5px;
+        border-color: rgba(0, 0, 0, 1);
+        border-style: solid;
+        border-radius: 25px;
+    }
+
+    #MainBody .welcomingMessage {
+        margin-top: 250px;
+        margin-left: 25px;
+    }
+
+    .button {
+        height: auto;
+        width: auto;
+        margin: 10px 250px;
+        font-size: 15px;
+        border-bottom: 5px;
+        border-top: 5px;
+        border-left: 5px;
+        border-right: 5px;
+        border-color: rgba(0, 0, 0, 1);
+        border-style: solid;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 1);
+        color: white;
+    }
+
+    .footer {
+        margin: 240px 0 0 0;
+    }
+
+    .Grid-container {
+        grid-template-columns: auto auto;
+    }
+
+
+    .Grid-item > p {
+        font-size: 15px;
+    }
+
+    .footer .footerPhoto {
+        max-width: 120px;
+    }
+}
+/*IPhone 12 pro*/
+@media (max-width: 390px) {
+    body {
+
+        max-width: 390px;
+        margin: 0;
+    }
+
+    #BodyContainer {
+        width: 390px;
+    }
+
+    #Nav {
+        justify-content: space-evenly;
+        width: 100%;
+        font-size: 8px;
+    }
+
+    #Logo a img {
+        display: none;
+    }
+
+    #Logo {
+        margin: 10px;
+    }
+
+    #Logo > a {
+        display: none;
+    }
+
+    #MainBody .welcomingMessage p {
+
+
+        margin: 0;
+        font-size: 20px;
+        border-bottom: 5px;
+        border-top: 5px;
+        border-left: 5px;
+        border-right: 5px;
+        border-color: rgba(0, 0, 0, 1);
+        border-style: solid;
+        border-radius: 25px;
+    }
+
+    #MainBody .welcomingMessage {
+        margin: 190px 15px 0 15px;
+    }
+
+    .button {
+        height: auto;
+        width: auto;
+        margin: 50px 145px;
+        font-size: 15px;
+        border-bottom: 5px;
+        border-top: 5px;
+        border-left: 5px;
+        border-right: 5px;
+        border-color: rgba(0, 0, 0, 1);
+        border-style: solid;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 1);
+        color: white;
+    }
+
+    .footer {
+        margin: 270px 0 0 0;
+    }
+
+    .Grid-container {
+        grid-template-columns: auto auto;
+    }
+
+
+    .Grid-item > p {
+        font-size: 11px;
+    }
+
+    .footer .footerPhoto {
+        max-width: 120px;
+    }
+
+
+}
